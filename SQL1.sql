@@ -1,0 +1,21 @@
+create database Booksdb;
+use Booksdb;
+create table Books(title varchar(50),author varchar(50),genre varchar(50),publicationyear int,price int);
+insert into Books values("THE HOUSE OF MIRTH","EDITH WHARTON","drama",1905,450);
+insert into Books values("EAST OF EDEN","JOHN STEINBECK","romance",1952,350);
+insert into Books values("A TIME TO KILL","JOHN GRISHAM","mystery",1989,300);
+insert into Books values(" THE SUN ALSO RISES","ERNEST HEMINGWAY","historical fiction",1926,1132);
+insert into Books values(" VILE BODIES","EVELYN WAUGH","fiction",1930,1000);
+insert into Books values("A SCANNER DARKLY","PHILIP K.DICK","pshychological fiction",1977,530);
+insert into Books values("NUMBER THE STARS","LOIS LOWRY","children literature",1989,690);
+insert into Books values("BRAVE NEW WORLD","ALDOUS HUXLEY","science fiction",1932,540);
+insert into Books values("BAND OF BROTHERS","STEPHEN E AMBROSE","history",1992,440);
+insert into Books values("THE DARK TOWER","STEPHEN KING","horror",1982,380);
+select * from Books;
+select * from Books where title="A SCANNER DARKLY";
+select * from Books where title="EAST OF EDEN";
+update Books set price=1200 where price=1132;
+update Books set price=500 where price=440;
+delete from Books where title="A SCANNER DARKLY";
+select * from Books;
+
